@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BookOpen, Coffee, Clock, Users, ChevronRight, Sparkles, Utensils } from 'lucide-react';
 import { FestiveRecipe } from '../types.ts';
+import tableCelebrationImg from '../assets/images/holiday_table_celebration_1792175339916.jpg';
+import winterVillageImg from '../assets/images/holiday_winter_village_1792175341320.jpg';
 
 const FESTIVE_RECIPES: FestiveRecipe[] = [
   {
@@ -95,7 +97,7 @@ export const FestiveMoments: React.FC = () => {
           <div className="group overflow-hidden rounded-2xl border border-stone-800 bg-stone-900/60 transition-all hover:border-stone-700">
             <div className="aspect-[16/10] overflow-hidden relative">
               <img
-                src="/src/assets/images/holiday_table_celebration_1792175339916.jpg"
+                src={tableCelebrationImg}
                 alt="Friends and family gathered around an elegant candlelit holiday table"
                 referrerPolicy="no-referrer"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -128,7 +130,7 @@ export const FestiveMoments: React.FC = () => {
           <div className="group overflow-hidden rounded-2xl border border-stone-800 bg-stone-900/60 transition-all hover:border-stone-700">
             <div className="aspect-[16/10] overflow-hidden relative">
               <img
-                src="/src/assets/images/holiday_winter_village_1792175341320.jpg"
+                src={winterVillageImg}
                 alt="Snow-covered alpine chalet at twilight with glowing windows"
                 referrerPolicy="no-referrer"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"

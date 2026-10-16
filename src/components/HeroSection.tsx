@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Calendar, Clock, Heart, Edit3, Check, Snowflake, Sun, Flame } from 'lucide-react';
 import { HolidayTheme } from '../types.ts';
+import heroHearthImg from '../assets/images/holiday_hero_cozy_hearth_1792175340035.jpg';
 
 interface HeroSectionProps {
   currentTheme: HolidayTheme;
@@ -316,7 +317,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Fallback container with gradient and icon */}
               <div className="aspect-[4/3] sm:aspect-[16/10] lg:aspect-square w-full relative">
                 <img
-                  src="/src/assets/images/holiday_hero_cozy_hearth_1792175340035.jpg"
+                  src={heroHearthImg}
                   alt="Cozy holiday hearth with lit Christmas tree and crackling fireplace"
                   referrerPolicy="no-referrer"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
