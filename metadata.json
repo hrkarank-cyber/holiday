@@ -1,0 +1,6 @@
+{
+  "name": "Festive Holiday Welcome",
+  "description": "An enchanting holiday welcome experience featuring seasonal atmospheres, countdowns, interactive greeting card studio, and festive soundscapes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
